@@ -36,6 +36,8 @@
   <p><b>Email:</b> {{ booking.email }}</p>
   <p><b>Seats:</b> {{ booking.seatsBooked }}</p>
   <p><b>Total:</b> ₹{{ booking.totalAmount }}</p>
+  <p><b>Flight Time{{booking.departureDate}}</b></p>
+  <p><b>Flight Date{{booking.departureTime}}</b></p>
   <p><b>Date:</b> {{ booking.bookingDate | date:'medium' }}</p>
 
 </div>

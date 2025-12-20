@@ -44,7 +44,9 @@ checkPnr(){
       seatsBooked: res.seatsBooked,
       totalAmount: res.totalAmount,
       flightNumber: res.flightNumber,
-      bookingDate: res.bookingDate
+      bookingDate: res.bookingDate,
+      departureDate:res.departureDate,
+      departureTime:res.departureTime
     };
    
  console.log(this.booking.email)
