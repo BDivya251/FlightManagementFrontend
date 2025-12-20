@@ -23,6 +23,7 @@
             <td>Total Amount</td>
             <td>Flight Number</td>
             <td>Booking Date</td>
+            <td>Cancel</td>
         </tr>
         </thead>
         <tbody>
@@ -34,8 +35,12 @@
             <td>{{passenger.totalAmount}}</td>
             <td>{{passenger.flightNumber}}</td>
             <td>{{passenger.bookingDate}}</td>
+            <button [routerLink]="['/user/cancel-booking',passenger.pnr]"
+            [disabled]="passenger.status === 'Cancelled'">
+         {{ passenger.status === 'Cancelled' ? 'Cancelled' : 'Cancel' }}</button>
         </tr>
         </tbody>
+     
     
 </table>
 <p *ngIf="searched && !loading && PassengersDetails.length==0">

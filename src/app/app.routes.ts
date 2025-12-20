@@ -35,7 +35,7 @@ export const routes: Routes = [
        {path:'booking/:flightId',component:BookingService},
        {path:'search-by-email',component:SearchByEmail},
        {path:'search-flight',component:FlightSearchComponent},
-       {path:'cancel-booking',component:CancelBooking}
+       {path:'cancel-booking/:pnr',component:CancelBooking}
     ]
   },
    {path:'**',redirectTo:'home'},

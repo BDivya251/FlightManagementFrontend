@@ -6,4 +6,6 @@ export interface PnrResponse {
   totalAmount: number;
   flightNumber: string;
   bookingDate: string; // ISO date-time string
+  departureDate:string;
+  departureTime:string
 }
